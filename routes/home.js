@@ -8,4 +8,9 @@ router.get("/", async (req, res, next) => {
   });
 });
 
+router.get("/head", async (req, res, next) => {
+  const headers = req.headers;
+  return res.status(200).json(headers);
+});
+
 module.exports = router;
