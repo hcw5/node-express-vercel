@@ -9,11 +9,11 @@ app.use(express.json());
 // Routes
 app.use("/home", home);
 
-app.get("/", (req, res) => (
-  headers = req.headers
-  res.send(headers)
-  ));
+app.get("/", (req, res) => {
+  const headers = req.headers; // Corrected variable assignment
+  res.send(headers);
+});
 
-// connection
+// Connection
 const port = process.env.PORT || 9001;
 app.listen(port, () => console.log(`Listening to port ${port}`));
