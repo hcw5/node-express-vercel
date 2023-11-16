@@ -7,8 +7,8 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use("/home", home);
-app.use("/head", home);
+app.use("/", home);
+// app.use("/head", home);
 
 
 
