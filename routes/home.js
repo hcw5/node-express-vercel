@@ -9,7 +9,7 @@ router.get("/home", async (req, res, next) => {
   });
 });
 
-router.get("/", async (req, res, next) => {
+router.get("/head", async (req, res, next) => {
   // Second handler for "/head"
   const headers = req.headers;
   return res.status(200).json(headers);
