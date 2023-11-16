@@ -15,12 +15,12 @@ router.get("/head", async (req, res, next) => {
   return res.status(200).json(headers["x-real-ip"]);
 });
 
-router.get("/random"), async(req, res, next) => {
+router.get("/random", async(req, res, next) => {
   const quotes = ["hello", "wssup", "okay"]
   return res.status(200).json({
     message: "im familiar with it"
   })
-};
+});
 
 
 module.exports = router;
