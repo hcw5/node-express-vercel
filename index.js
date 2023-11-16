@@ -10,7 +10,8 @@ app.use(express.json());
 app.use("/home", home);
 
 app.get("/", (req, res) => (
-  res.send("Omg finally")
+  headers = req.headers
+  res.send(headers)
   ));
 
 // connection
