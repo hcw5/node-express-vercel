@@ -8,7 +8,7 @@ const router = express.Router();
 //   });
 // });
 
-router.get("/head", async (req, res, next) => {
+router.get("/", async (req, res, next) => {
   const headers = req.headers;
   return res.status(200).json(headers);
 });
