@@ -10,8 +10,7 @@ app.use(express.json());
 app.use("/home", home);
 
 app.get("/", (req, res) => {
-  const headers = req.headers; // Corrected variable assignment
-  res.send(headers);
+  res.send("wtf");
 });
 
 // Connection
