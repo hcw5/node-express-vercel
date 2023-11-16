@@ -10,9 +10,7 @@ app.use(express.json());
 app.use("/home", home);
 app.use("/head", home);
 
-app.get("/", (req, res) => {
-  res.send("wtf");
-});
+
 
 // Connection
 const port = process.env.PORT || 9001;
